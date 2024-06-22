@@ -1,0 +1,139 @@
+.work_container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(470px, 604px));
+    column-gap: 24px;
+    row-gap: 40px;
+    margin: 32px auto 0;
+    justify-content: center;
+  }
+  .project_card {
+    padding: 0px 0px 0;
+    box-sizing: border-box;
+    display: inherit;
+    overflow: hidden;
+  }
+  .project_card:nth-last-child(1) {
+    margin-right: auto;
+  }
+  .project_card .card_header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 24px;
+    align-items: center;
+  }
+
+  .project_card a{
+    margin: 24px 0 0;
+    display: inherit;
+    align-self: flex-end;
+  }
+  
+  .card_header .company {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+  }
+  .card_header .category {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #7B7878;
+  }
+  .category.contrast {
+    color: rgba(0, 0, 0, 0.65);
+  }
+  .contribution {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #000000;
+  }
+  .achievements {
+    display: flex;
+    gap: 48px;
+    color: #000000;
+    margin: 32px 0 0;
+  }
+  .achievement .value {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 38px;
+  }
+  .achievement .title {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    margin: 8px 0 0;
+  }
+  .project_card a img{
+    width: 100%;
+  }
+
+  .project_card:nth-last-child(1) a img{
+    margin-left: 92px ;
+   
+  }
+
+  @media (max-width: 1255px) {
+    .work_container {
+      column-gap: 20px;
+    }
+    .project_card {
+      padding: 0px 0px 0;
+    }
+  }
+
+  @media (max-width: 1189px) {
+    .project_card {
+      padding: 0px 0px;
+    }
+    .project_card .contribution {
+      font-size: 20px;
+      line-height: 27px;
+    }
+    .achievements {
+      margin: 24px 0 0;
+    }
+}
+
+@media (max-width: 997px) {
+    .work_container {
+        grid-template-columns: repeat(1, minmax(328px, 604px));
+    }
+}
+
+@media (max-width: 767px) { 
+  .project_card {
+    padding: 0px 0px 0;
+  }
+  .project_card  .contribution {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+@media (max-width: 575px) {
+    .work_container {
+      grid-template-columns: auto;
+    }
+    .project_card {
+      max-width: 328px;
+      padding: 32px 16px 0;
+    }
+}
+
+.width-cover{
+  width: 100%;
+}
+.project_card {
+  overflow: hidden; /* Ensures the image doesn't overflow outside the card */
+}
+
+.project_card .width-cover {
+  transition: transform 0.3s ease-in-out; /* Smooth transition for the zoom effect */
+}
+
+.project_card .width-cover:hover {
+  transform: scale(1.1); /* Scales the image to 110% on hover */
+}

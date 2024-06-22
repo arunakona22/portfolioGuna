@@ -1,0 +1,52 @@
+#metrics .value_container {
+    max-width: 998px;
+    margin: 150px auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.value_container .value_card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.value_card .value{
+    position: relative;
+    z-index: -1;
+    font-family: 'satoshi';
+    font-size: 64px;
+    font-weight: 700;
+}
+.value_card .title{
+    margin-top: 8px;
+    font-family: 'satoshi';
+    font-size: 20px;
+    font-weight: 400;
+}
+
+@media (max-width: 997px) {
+    #metrics .value_container{
+        margin: 120px auto 0;
+    }
+    #metrics .value_container{
+        justify-content: space-around;
+    }
+    .value_card .value{
+        font-size: 32px;
+    }
+    .value_card .title{
+        font-size: 16px;
+    }
+}
+@media (max-width: 767px) {
+    #metrics .value_container{
+        margin: 80px auto 0;
+    }
+    #metrics .value_container{
+        flex-direction: column;
+    }
+    .value_container .value_card{
+        margin-top: 32px;
+    }
+
+}

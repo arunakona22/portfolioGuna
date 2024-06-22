@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/designer_portfolio/assets/fonts/Satoshi/Satoshi-Regular.otf'), url('/designer_portfolio/assets/fonts/Satoshi/Satoshi-Medium.otf'), url('/designer_portfolio/assets/fonts/Satoshi/Satoshi-Bold.otf'), url('/designer_portfolio/assets/fonts/Satoshi/Satoshi-Black.otf');
+  font-weight: normal, medium, bold, 900;
+}
+
+*, html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000000;
+  color: #FFFFFF;
+  font-family: Satoshi;
+}
